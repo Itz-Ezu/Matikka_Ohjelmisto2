@@ -27,8 +27,8 @@ ax.axis('equal')
 plt.xticks([-1, 0, 1], minor=True)
 plt.yticks([-1, 0, 1])
 
-pist_xy=np.array([np.pi/6, np.pi/4, np.pi/3, np.pi/2, np.pi*2/3, np.pi*3/4, np.pi*5/6, np.pi, np.pi*1.5])
-varit=np.array(['red', 'green', 'yellow', 'blue', 'purple', 'brown', 'orange', 'pink', 'gray'])
+pist_xy=np.array([np.pi/6, np.pi/4, np.pi/3, np.pi/2, np.pi*2/3, np.pi*5/6, np.pi, np.pi*1.5])
+varit=np.array(['red', 'green', 'yellow', 'blue', 'purple', 'orange', 'pink', 'gray'])
 
 lista = [np.pi/6, np.pi/4, np.pi/3, np.pi/2, np.pi*2/3, np.pi*3/4, np.pi*5/6, np.pi, np.pi*1.5]
 
@@ -60,11 +60,6 @@ plt.annotate(r'$(\frac{\pi}{2})$',
 
 plt.annotate(r'$(\frac{\pi*2}{3})$',
              xy=(np.cos(np.pi*2/3), np.sin(np.pi*2/3)), xycoords='data',
-             xytext=(+30, +0), textcoords='offset points', fontsize=12,
-             arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=0"))
-
-plt.annotate(r'$(\frac{\pi*3}{4})$',
-             xy=(np.cos(np.pi*3/4), np.sin(np.pi*3/4)), xycoords='data',
              xytext=(+30, +0), textcoords='offset points', fontsize=12,
              arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=0"))
 

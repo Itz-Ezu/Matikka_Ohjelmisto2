@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 X = np.linspace(-np.pi*3, np.pi*3, 256, endpoint=True)
 C,S = np.cos(X), np.sin(X)
 
-plt.plot(X, C, color="green", linewidth=2.5, linestyle="--", label="cosine")
-plt.plot(X, S, color="orange",  linewidth=2.5, linestyle="--", label="sine")
+fig, ax = plt.subplots(figsize=(6.8*3, 4.8))
+
+plt.plot(X, C, color="green", linewidth=3, linestyle="--", label="cosine")
+plt.plot(X, S, color="purple",  linewidth=3, linestyle="-.", label="sine")
 
 plt.legend(loc='upper left', frameon=False)
 
@@ -22,7 +24,6 @@ plt.yticks([-1, -0.50, 0, 0.50, +1],
        [r'$-1$', r'$-0.50$', r'$0$', r'$0.50$', r'$+1$'])
 
 
-plt.plot(X,C)
-plt.plot(X,S)
+
 
 plt.show()
